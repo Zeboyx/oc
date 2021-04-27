@@ -30,7 +30,7 @@ h3 {
 
 .container {
     display: flex;
-    /* or inline-flex */
+    margin:10px;
 }
 
 .align-left {
@@ -53,9 +53,9 @@ nav {
 }
 
 .nav, .menu {
-    display: flex; /*1*/
-    flex-direction : row; /*2*/
-    justify-content: center; /*3*/
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
 }
 
 .nav-link {
@@ -119,18 +119,13 @@ ul {
     border-radius: 15px;
     background-color: white;
     padding: 0px;
-    /* max-width: 30%; */
     overflow: hidden;
-    /* max-height: 30%; */
     border: 5px solid white;
     flex: 1 0 29%;
-    /* width: calc(33% - 20px); */
-    /* width: 100%; */
     margin: 10px;
 }
 
 .img {
-    /* border-radius: 15px; */
     max-width: 100%;
     width: 100%;
     height: 110px;
@@ -144,7 +139,7 @@ ul {
 }
 
 .search {
-    margin-top: 10px;
+    margin-top:15px;
     padding: 0;
     display: flex !important;
 }
@@ -208,9 +203,8 @@ ul {
 
 .all {
     margin: 50px;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: auto;
-    margin-top: 10px;
 }
 
 footer {
@@ -247,20 +241,15 @@ footer {
     border-radius: 15px;
     background-color: white;
     padding: 0px;
-    /* max-width: 30%; */
     overflow: hidden;
-    /* max-height: 30%; */
     border: 5px solid white;
     flex: 1 0 29%;
     flex-flow: row;
-    /* width: calc(33% - 20px); */
-    /* width: 100%; */
     margin: 10px;
 }
 
 .img2 {
-    /* border-radius: 15px; */
-    max-width: 100%;
+    max-width: 77.95px;
     width: 40%;
     height: 110px;
     object-fit: cover;
@@ -346,17 +335,12 @@ footer {
     border-radius: 15px;
     background-color: white;
     padding: 0px;
-    /* max-width: 30%; */
     overflow: hidden;
-    /* max-height: 30%; */
     flex: 1 0 29%;
-    /* width: calc(33% - 20px); */
-    /* width: 100%; */
     margin: 20px;
 }
 
 .img3 {
-    /* border-radius: 15px; */
     max-width: 100%;
     width: 100%;
     height: 180px;
@@ -365,7 +349,6 @@ footer {
 }
 
 .img4 {
-    /* border-radius: 15px; */
     max-width: 100%;
     height: 424px;
     object-fit: cover;
@@ -413,4 +396,107 @@ body {
 
 .star {
     width: 14px!important;
+}
+
+.blue {
+    color: rgb(0, 119, 255);
+}
+
+.title0 {
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 450px) {
+    .first-section {
+        margin-top: 20px;
+        display: flex;
+        flex-flow: wrap column-reverse;
+        order: 2;
+        max-width: 100%;
+    }
+    .second-section {
+        margin-top: 40px;
+        margin: 20px;
+    }
+    .popular {
+        border-radius: 0;
+        background-color: #F2F2F2;
+        padding: 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .lodging {
+        border-radius: 15px;
+        background-color: white;
+        padding: 10px;
+        margin-right: 10px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .all {
+        max-width: 450px;
+    }
+    .cards {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .filters {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .activities {
+        display: flex;
+        flex-flow: column;
+        margin-top: 20px;
+    }
+    .img4 {
+        max-width: 100%;
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 54%;
+    }
+    .img3 {
+        max-width: 100%;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        object-position: 50% 54%;
+    }
+    .card3 {
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        transition: 0.3s;
+        border-radius: 15px;
+        background-color: white;
+        padding: 0px;
+        overflow: hidden;
+        flex: 1 0 29%;
+        margin-bottom: 20px!important;
+        margin: 0;
+    }
+    .container2 {
+        max-width: 1500px;
+        margin: auto;
+        width: 100%;
+        margin-left: 40px;
+        flex-flow: column;
+    }
+    .info {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top {
+        padding-top: 15px;
+        margin: 20px;
+    }
 }

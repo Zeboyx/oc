@@ -11,8 +11,6 @@
         content="Trouvez votre hébergement pour des vacances de rêve. En plein centre ville ou en pleine nature.">
     <title>Reservia - Hébergements et activités en France</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="assets/css/tablette.css" />
-    <link rel="stylesheet" media="screen and (max-width: 450px)" href="assets/css/tel.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="assets/fonts/fontawesome/css/all.css" rel="stylesheet">
@@ -31,13 +29,13 @@
                     <li><a class="nav-link" href="#lodging">Hébergements</a></li>
                     <li><a class="nav-link" href="#activities">Activités</a></li>
                 </ul>
-                <a class="nav-link blue" style="color: rgb(0, 119, 255);" href="#">S'inscrire</a>
+                <a class="nav-link blue" href="#">S'inscrire</a>
             </nav>
         </header>
         <div class="top">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2>En plein centre ville ou en pleine nature</h2>
-            <div style="margin-top:15px;" class="search input">
+            <div class="search input">
                 <span class="fas fa-map-marker-alt icon-search"></span>
                 <input class="search-input" placeholder="Marseille, France" type="text">
                 <button class="btn-search">Rechercher</button>
@@ -65,7 +63,7 @@
         <section class="first-section">
             <div class="lodging" id="lodging">
                 <div class="box">
-                    <h3 style="padding-bottom: 15px;">Hébergements à Marseille</h3>
+                    <h3 class="title0">Hébergements à Marseille</h3>
                     <div class="cards">
                         <div class="card">
                             <img class="img" src="assets/img/hebergements/4_small/auberge1.jpg">
@@ -288,15 +286,5 @@
         </div>
     </footer>
 </body>
-<script>
-    $('.sous-menu').click(function () {
-        if ($(window).width() < 450) {
-            if ($(this).hasClass('is-active'))
-                $(this).removeClass('is-active');
-            else
-                $(this).addClass('is-active');
-        }
-    });
-</script>
 
 </html>
